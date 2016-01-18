@@ -16,7 +16,8 @@ It's very straightforward.
     void sync([timeline, callback, errorCallback]);
 
 *Parameters*
-`timeline` (optional) is either a function or an array. If it's an array, the elements of that array can be function or other arrays. This allows you to create complex timelines with nested actions.
+
+`timeline` (optional) is either a function or an array. If it's an array, the elements of that array can be functions or other arrays. This allows you to create complex timelines with nested actions.
 
 `callback` (optional) is a function which is executed when the timeline has been completed, its signature is as follows:
 
@@ -27,8 +28,8 @@ It's very straightforward.
     void errorCallback(message)
 
 *Notes*
-- `timeline` is optional, in case you're building a timeline dynamically and in some cases it could be empty.
-- Note that either `callback` or `errorCallback` are executed, never both.
+- The `timeline` parameter is optional in case you're building a timeline dynamically and in some cases it could be empty.
+- Either `callback` or `errorCallback` are executed, never both.
 
 ## Where are the examples?
 You can view the tests in [test/test.js](https://github.com/QuantumConcepts/easy-sync/blob/master/test/test.js), or see below.
